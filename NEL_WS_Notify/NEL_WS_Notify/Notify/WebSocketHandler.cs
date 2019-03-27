@@ -176,10 +176,10 @@ namespace NEL_WS_Notify.Notify
 
         public static string MakeMessage(Type type, string data)
         {
-            return new JObject() {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(new JObject() {
                     {"type", type.ToString() },
                     {"data", JObject.Parse(data)}
-                }.ToString();
+                });
         }
     }
 }
