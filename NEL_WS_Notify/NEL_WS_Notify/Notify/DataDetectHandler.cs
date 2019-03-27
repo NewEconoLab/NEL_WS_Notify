@@ -49,7 +49,8 @@ namespace NEL_WS_Notify.Notify
             dictInfo.Remove(network);
             dictInfo.Add(newdata.network, newdata);
 
-            message = res.ToString();
+            //message = res.ToString();
+            message = Newtonsoft.Json.JsonConvert.SerializeObject(res);
             return flag;
         }
         private class A
