@@ -1,0 +1,8 @@
+﻿{
+  "mongodbConnStr_testnet": "",
+  "mongodbDatabase_testnet": "",
+  "mongodbConnStr_mainnet": "",
+  "mongodbDatabase_mainnet": "",
+  "ping_interval_minutes": 1,
+  "loop_interval_seconds": 3
+}
